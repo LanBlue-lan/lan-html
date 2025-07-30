@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索文章</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans" style="background: url('images/forum-bg.jpg') no-repeat center center fixed; background-size: cover;">
+
+
+  <!-- 🔥 Banner -->
+  <header class="bg-gray-900 text-white text-center py-6 shadow">
+    <h1 class="text-5xl font-serif tracking-wider">
+      <a href="index.html" class="hover:text-yellow-300 transition">小嵐</a>
+    </h1>
+    
+  </header>
+
+  <!-- 📌 導覽列 -->
+  <nav class="bg-gray-800 text-gray-200 shadow">
+  <div class="max-w-6xl mx-auto flex space-x-6 px-4">
+    <a href="index.html" class="py-3 hover:text-yellow-400">🏠 資訊</a>
+      <a href="post.html" class="py-3 hover:text-yellow-400">📜 最新文章</a>
+	  <a href="post-new.html" class="py-3 hover:text-yellow-400 font-bold underline">✍️ 寫文章</a> 
+      <a href="search.html" class="py-3 hover:text-yellow-400">🔍 搜索</a>
+      <a href="login.html" class="py-3 hover:text-yellow-400">登入</a>
+  </div>
+</nav>
+
+  <!-- 🔍 搜索區塊 -->
+  <main class="max-w-4xl mx-auto mt-8 bg-white rounded shadow p-6">
+    <h2 class="text-2xl font-bold mb-4 text-gray-800">🔍 搜索文章</h2>
+
+    <!-- 搜索表單 -->
+    <form class="flex space-x-2 mb-6" onsubmit="event.preventDefault(); alert('搜索功能稍後開發');">
+      <input type="text" id="searchInput" class="flex-grow border rounded px-3 py-2" placeholder="輸入關鍵字搜尋...">
+      <button class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700">搜索</button>
+    </form>
+
+    <!-- 快捷搜尋選項 -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-blue-700">
+      <button class="border rounded p-2 hover:bg-blue-50">1 小時內的新文章</button>
+      <button class="border rounded p-2 hover:bg-blue-50">4 小時內的新文章</button>
+      <button class="border rounded p-2 hover:bg-blue-50">8 小時內的新文章</button>
+      <button class="border rounded p-2 hover:bg-blue-50">24 小時內的新文章</button>
+      <button class="border rounded p-2 hover:bg-blue-50">一週內的新文章</button>
+      <button class="border rounded p-2 hover:bg-blue-50">一個月內的新文章</button>
+    </div>
+
+    <p class="text-gray-500 text-sm mt-4">
+      📢 小提示：搜尋功能目前是靜態版，將來可連接後端 MySQL 搜索。
+    </p>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-4 mt-10">
+    © 2025 XiaoLan & 文章搜索
+  </footer>
+
+</body>
+</html>

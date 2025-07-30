@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小嵐的資訊</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50">
+
+<!-- 🔥 頁首 -->
+<header class="bg-gray-900 text-white text-center py-6 shadow-lg">
+  <h1 class="text-5xl font-serif tracking-wider">
+    <a href="index.html" class="hover:text-yellow-300 transition">小嵐</a>
+  </h1>
+  <p class="text-lg text-gray-300 mt-1">一名熱愛的網頁前端設計工程師!!!</p>
+</header>
+
+<!-- 📜 內容卡片 -->
+<main class="max-w-4xl mx-auto mt-10 bg-white rounded-2xl shadow-2xl p-8 border border-gray-200">
+
+  <!-- 🏷️ 標題 -->
+  <h2 class="text-2xl font-bold mb-6 text-center text-indigo-700">🎥 職訓課的專題 - 基於YOLO與嵌入式控制的智慧拉圾分類系統 </h2>
+
+  <!-- 🎬 影片 -->
+  <section class="mb-8">
+    <h3 class="text-xl font-semibold mb-2">📹 專題影片</h3>
+    <!-- YouTube 影片嵌入 -->
+    <section>
+	  
+	  <div class="aspect-w-16 aspect-h-9">
+		<iframe 
+		  src="https://www.youtube.com/embed/_IRVN4iOyac" 
+		  class="w-full h-64 md:h-96 rounded-lg shadow-md" 
+		  frameborder="0" 
+		  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		  allowfullscreen>
+		</iframe>
+	  </div>
+	  <p class="text-gray-600 text-sm mt-2 text-center">（影片：YouTube 專題介紹）</p>
+	</section>
+
+  <!-- 🖼️ 圖片 -->
+  <section class="mb-8">
+    <h3 class="text-xl font-semibold mb-2">🖼️ 專題簡報</h3>
+    <img src="images/螢幕擷取畫面 2025-07-29 123256.png" alt="文章圖片" class="rounded-lg shadow-md w-full max-w-md">
+	
+	<p>
+	  <a href="https://www.canva.com/design/DAGuH4PKzvU/GTjIWR37eTEp2QV9FlGp-g/view?utm_content=DAGuH4PKzvU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb1262aaa5b" 
+		 target="_blank" 
+		 class="text-blue-600 hover:underline">
+		👉 點我查看 Canva 設計
+	  </a>
+	</p>
+  </section>
+  
+    <!-- 📝 文章內容 -->
+  <section class="mb-8">
+    <h3 class="text-xl font-semibold mb-2">📝 專題目錄</h3>
+	<ol class="list-decimal list-inside mb-4">
+	  <li>專題動機及目的</li>
+	  <li>核心功能與系統流程圖</li>
+	  <li>YOLO AI識別模型</li>
+	  <li>控制機械手臂</li>
+	  <li>GUI人機介面與成果展示</li>
+	  <li>問題與解法</li>
+	  <li>未來展望</li>
+	  <li>結語</li>
+	</ol>
+
+	<h3 class="text-xl font-semibold mb-2">📝 專題動機及目的</h3>
+	<table class="table-auto border border-gray-300">
+	  <tr>
+		<th class="border px-4 py-2 bg-gray-100">動機</th>
+		<td class="border px-4 py-2">
+		  ◆ 生活中常見資源回收分類困難，誤分類嚴重，且需使用人力成本。<br>
+		  ◆ 若能讓機器自動辨識垃圾並分類，可大幅減少人力與錯誤率。
+		</td>
+	  </tr>
+	  <tr>
+		<th class="border px-4 py-2 bg-gray-100">目的</th>
+		<td class="border px-4 py-2">
+		  ◆ 利用 AI 辨識與簡易機械手臂，實現「低成本且可展示」的智慧分類系統。
+		</td>
+	  </tr>
+	</table>
+
+  </section>
+	
+	<div class="bg-white shadow-lg rounded-2xl p-8 max-w-2xl w-full">
+		<h2 class="text-2xl font-bold text-center text-indigo-700 mb-4">📌 結 論</h2>
+		<!-- 條列內容 -->
+		<ul class="list-disc list-inside space-y-2 text-gray-800">
+		  <p>本專案整合以下模組：</p>	
+		  <li>YOLO11 應用及模型訓練</li>
+		  <li>GUI 操作介面（即時畫面、統計圖、自動儲存與 RETRAIN 機制）</li>
+		  <li>Raspberry Pi Pico 控制四軸伺服馬達</li>
+		  <li>Servo 平滑運動控制（Cosine Easing）</li>
+		  <li>分類結果串接控制邏輯 → 自動分類行為</li>
+		</ul>
+
+</main>
+
+<!-- ⚫ 頁尾 -->
+<footer class="bg-gray-900 text-gray-300 text-center py-4 mt-10">
+  © 2025 基於YOLO與嵌入式控制的智慧拉圾分類系統
+</footer>
+
+</body>
+</html>

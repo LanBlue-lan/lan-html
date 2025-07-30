@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>發表新文章</title>
+  <link rel="icon" href="images/1.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function submitPost(event) {
+      event.preventDefault();
+      const title = document.getElementById('postTitle').value.trim();
+      const content = document.getElementById('postContent').value.trim();
+      if (!title || !content) {
+        alert('請輸入文章標題與內容');
+        return;
+      }
+      // 這裡可以串後端API送出文章，現在先用 alert 模擬
+      alert('文章標題：' + title + '\n文章內容：' + content + '\n(送出成功，未串接後端)');
+      // 重置表單
+      event.target.reset();
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-100 min-h-screen flex flex-col">
+
+  <header class="bg-gray-900 text-white text-center py-6 shadow">
+    <h1 class="text-4xl font-serif tracking-wider">
+      <a href="index.html" class="hover:text-yellow-300 transition">小嵐</a>
+    </h1>
+    <p class="text-lg text-gray-300 mt-1">個人資訊 - 發表新文章</p>
+  </header>
+
+  <nav class="bg-gray-800 text-gray-200 shadow">
+    <div class="max-w-6xl mx-auto flex space-x-6 px-4">
+      <a href="index.html" class="py-3 hover:text-yellow-400">🏠 資訊</a>
+      <a href="post.html" class="py-3 hover:text-yellow-400">📜 最新文章</a>
+	  <a href="post-new.html" class="py-3 hover:text-yellow-400 font-bold underline">✍️ 寫文章</a> 
+      <a href="search.html" class="py-3 hover:text-yellow-400">🔍 搜索</a>
+      <a href="login.html" class="py-3 hover:text-yellow-400">登入</a>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto mt-8 bg-white p-6 rounded shadow">
+
+    <form onsubmit="submitPost(event)" class="space-y-4">
+      <div>
+        <label for="postTitle" class="block text-gray-700 font-semibold mb-1">文章標題</label>
+        <input type="text" id="postTitle" class="w-full border rounded px-3 py-2" placeholder="輸入文章標題" required />
+      </div>
+
+      <div>
+        <label for="postContent" class="block text-gray-700 font-semibold mb-1">文章內容</label>
+        <textarea id="postContent" rows="8" class="w-full border rounded px-3 py-2" placeholder="輸入文章內容" required></textarea>
+      </div>
+
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+        發表文章
+      </button>
+    </form>
+
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-4 mt-auto">
+    © 2025 XiaoLan & 網頁資訊
+  </footer>
+
+</body>
+</html>

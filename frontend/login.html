@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans" style="background: url('images/forum-bg.jpg') no-repeat center center fixed; background-size: cover;">
+
+
+  <!-- 🔥 Banner -->
+  <header class="bg-gray-900 text-white text-center py-6 shadow">
+    <h1 class="text-5xl font-serif tracking-wider">
+      <a href="index.html" class="hover:text-yellow-300 transition">小嵐</a>
+    </h1>
+    
+  </header>
+
+  <!-- 📌 導覽列 -->
+  <nav class="bg-gray-800 text-gray-200 shadow">
+  <div class="max-w-6xl mx-auto flex space-x-6 px-4">
+    <a href="index.html" class="py-3 hover:text-yellow-400">🏠 資訊</a>
+      <a href="post.html" class="py-3 hover:text-yellow-400">📜 最新文章</a>
+	  <a href="post-new.html" class="py-3 hover:text-yellow-400 font-bold underline">✍️ 寫文章</a> 
+      <a href="search.html" class="py-3 hover:text-yellow-400">🔍 搜索</a>
+      <a href="login.html" class="py-3 hover:text-yellow-400">登入</a>
+  </div>
+</nav>
+
+  <!-- 🔐 登入表單 -->
+  <main class="max-w-md mx-auto mt-10 bg-white rounded shadow p-6">
+    <h2 class="text-2xl font-bold mb-4">登入</h2>
+    <form>
+      <label class="block mb-2 font-semibold">帳號</label>
+      <input type="text" class="w-full border px-3 py-2 mb-4 rounded" placeholder="輸入帳號">
+      
+      <label class="block mb-2 font-semibold">密碼</label>
+      <input type="password" class="w-full border px-3 py-2 mb-6 rounded" placeholder="輸入密碼">
+      
+      <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">登入</button>
+    </form>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-4 mt-10">
+    © 2025 XiaoLan & 登入頁面
+  </footer>
+
+</body>
+</html>
